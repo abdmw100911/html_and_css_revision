@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons in HTML</title>
+</head>
+<body>
+    <button style="background-color: gray; color: white; padding:10px 20px; border-radius: 25px; border: 1px solid; border-color: black;"
+    >CLick me</button>
+
+    <a href="2_lyrics.html" target="_blank">
+    <button style="background-color: gray; color: white; padding:10px 20px; border-radius: 25px; border: 1px solid; border-color: black;"
+    >CLick me to Get Rumbled</button>
+    </a>
+
+    <button style="background-color: gray; color: white; padding:10px 20px; border-radius: 25px; border: 1px solid; border-color: black;"
+    onclick="greet()">Hello</button>
+
+    <p id="msg">
+        h
+    </p>
+
+    <script>
+        function greet(){
+            document.getElementById("msg").innerHTML = "Hello";
+        }
+    </script>
+
+</body>
+</html>
