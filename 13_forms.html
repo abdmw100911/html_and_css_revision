@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form in html</title>
+    </head>
+    <body>
+        <!--
+        important attributes that will be used in the form
+        1. required : makes it mandatory to enter something in the input field
+        2. for : connects label to a input field
+        2. id : identification purpose
+        4. minlength : minimum lenght of string
+        5. maxlength : maximum length of string
+        6. placeholder : shallow text displayed in input field before anything is entered
+        7. min(for number):minimum number
+        8. max(for number):maximum number
+        9. value(for number): default value of number
+        -->
+        <form action="index.php" method="post" enctype="multipart/form-data">
+
+            <!--Name/username input-->
+            <label for="username">Username: </label>
+            <input type="text" id="username" required minlength="6" maxlength="20" placeholder="Enter your Username">
+            <br>
+
+            <!--Password input-->
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" required minlength="6">
+            <br>
+
+            <!--Email address input-->
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" placeholder="Enter your Email Id">
+            <br>
+
+            <!--Phone number-->
+            <label for="phoneNo">Mobile-No: </label>
+            <input type="tel" id="phoneNo" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <br>
+
+            <!--Date-->
+            <label for="dob">DOB: </label>
+            <input type="date" id="dob">
+            <br>
+
+            <!--number input-->
+            <label for="quantity">Enter Quantity: </label>
+            <input type="number" id="quantity" min="0" max="10" value="1">
+            <br>
+
+            <!--Radio buttons-->
+            <label>Subscription Plan: </label>
+            <br>
+
+            <label for="basic">Basic Plan</label>
+            <input type="radio" id="basic" name="plan" value="basic">
+
+            <label for="pro">Pro Plan</label>
+            <input type="radio" id="pro" name="plan" value="pro">
+
+            <label for="premium">Premium Plan</label>
+            <input type="radio" id="premium" name="plan" value="premium">
+            <br>
+            
+            <!--Dropdown menu-->
+            <label for="payment">Payment Method: </label>
+            <select id="payment">
+                <option value="debitCard">Debit Card</option>
+                <option value="creditCard">Credit Card</option>
+                <option value="COD">Cash on Delivery</option>
+            </select>
+            <br>
+
+            <!--Checkbox-->
+            <label for="confirmation">Confirm Order: </label>
+            <input type="checkbox" id="confirmation">
+            <br>
+
+            <!--Text Area for Comments or Reviews-->
+            <label for="comments">Comments: </label>
+            <br>
+            <textarea id="comments"></textarea>
+            <br>
+
+            <!--File input : img,video,pdf,word-->
+            <label for="pdf">Enter resume in pdf format: </label>
+            <input type="file" accept="application/pdf">
+            <br>
+
+            <label for="img">Enter your Photo: </label>
+            <input type="file" accept="image/jpeg, image/png">
+            <br>
+            <!--when the form will containe large data like pdf, image 
+                change the encryption type (enctype = multipart/form-data)-->
+            
+            <br>
+            <input type="submit">
+            <input type="reset">
+            <br>
+
+            
+
+        </form>
+    </body>
+</html>
