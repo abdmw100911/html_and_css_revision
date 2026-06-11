@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonts in css</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ole&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            font-family: monospace,Arial;
+            font-size: 4em;
+            font-style: italic;
+            font-weight: lighter;
+        }
+        /*using google fonts api for p1 font*/
+        /*Write the font-family given in the link*/
+        .p1{
+        font-family: Ole;
+        font-size: 2em;
+        font-weight: bold;
+        }
+
+        /*
+        creating a font-face for the downloaded font
+        @font-face{
+            src : url(location of the ttf file)
+            font-family : customized name for the font , to use it for styling
+        }
+        */
+        @font-face{
+            src: url(PlaywriteAUVICGuides-Regular.ttf);
+            font-family: lined-cursive ;
+        }
+
+        .p2{
+            font-family: lined-cursive ;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--
+    #different changes can be made in fonts 
+    1. font-family:Arial, roboto etc
+    2. font-size : 16px(default), 18px(bigger), 1em(default), 1.5em(bigger), 0.5em  (smaller)
+    3. font-weight : normal, bold
+    4. font-style : normal , italic
+
+    #if you want to use a font-family that is not inbuilt , there are 2 ways to do it 
+    1. link it to google fonts API 
+    2. download the font from google fonts locally and then use it 
+
+    1. linking to google fonts API
+    ->go to google fonts and select the font that you want 
+    ->click on "add" or "(+)" button
+    ->it will give you a link , paste that link in <header> of the html file
+    
+    2.downloading font locally and using it
+    ->download the required font from google fonts 
+    ->it will be downloaded as a zip file , extract it 
+    ->go into your extracted font folder and copy the "ttf" file 
+    ->paste the ttf file into your project folder 
+
+    ->inside the stylesheet do the follwoing
+
+    @font-face{
+    src : url(location of the ttf file)
+    font-family : customized name for the font , to use it for styling
+    }
+    -->
+
+    <h1>Abdullah Mewawala</h1>
+    <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam saepe sit perspiciatis ipsum, et reprehenderit libero voluptatem, autem voluptatibus blanditiis at tenetur aut nobis. Minima optio nostrum repudiandae atque eum!</p>
+    <p class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore est ipsam quo cupiditate nam velit illo quia itaque voluptatibus tempora, veritatis ipsum voluptate, voluptas expedita praesentium, repellendus maxime doloremque.
+    </p>
+</body>
+</html>
