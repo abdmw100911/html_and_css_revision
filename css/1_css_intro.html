@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /*selecting all paragraphs and apllying the same style to them*/
+        p{
+            color: blue;
+            font-weight: bold;
+        }
+
+        /*applying style by selecting elements through id*/
+        #p1{
+            color: blueviolet;
+            font-size: large;
+        }
+
+        /*applying style by selecting elements through class*/
+        .p2{
+            color: rgb(69, 144, 144);
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+    different ways to apply css 
+    1. inline 
+    2. internam 
+    3. external
+    -->
+
+    <!--inline-->
+    <h1 style="color: brown;">This is inline styling</h1>
+
+    <!--internal styling
+    create <style></style> in <head></head>
+    then style style element by selecting them as a whole , as a id or as a class
+    -->
+    <!--applying the same style on all paragraphs-->
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aperiam aspernatur neque non odit assumenda quibusdam magnam culpa exercitationem aliquid nam cupiditate, eum doloribus blanditiis, dolorem quidem! Deleniti, vel officia.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur omnis cum, voluptatem suscipit doloribus ab quia distinctio dolorum ducimus praesentium alias eveniet. Optio voluptatum doloremque quod, autem in accusantium ut.
+    </p>
+
+    <!--applying styles using id-->
+    <p id ="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quis inventore laboriosam quas, neque laudantium assumenda ipsam ab officia impedit sit possimus suscipit facilis fugiat magnam dignissimos similique debitis aliquid.</p>
+
+    <!--applying style using class-->
+    <p class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facilis beatae excepturi enim maiores tempore, eum, ullam reprehenderit fugit incidunt harum, quisquam id officia? Corporis delectus libero accusantium tempore.
+    </p>
+
+
+    <!--External styling
+    create a seperate file for sytling and link it to this html file 
+    <link rel="stylesheet" href="styles.css">
+    -->
+    
+</body>
+</html>
