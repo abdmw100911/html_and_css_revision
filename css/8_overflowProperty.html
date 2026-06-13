@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow in css</title>
+    <style>
+        #box{
+            border: 4px solid;
+            height: 50px;
+            /*overflow: clip;
+            overflow-clip-margin: 20px;*/
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    overflow = property that sets the desired behavious when content doesnot fit in the parent element(content overflows)
+
+    behaviours that can be defined
+    overflow : visible -> allows overflow
+    overflow : hidden ->hides the overflowed content , the hiddent content
+                        can be interacted with 
+    overflow : clip -> hides the overflowed content but allows extra space 
+                       for content to be visible
+    overflow : scroll -> provides a scroller to watch the content within the given space , when content is not overflowed the scroller is still visible but disabled
+
+    overflow : auto -> same as scroll , but when content is not overflowed the scroller is hidden
+    -->
+
+    <div id="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sint sit voluptate sed recusandae fugiat eligendi temporibus itaque eius laboriosam nesciunt at quos hic distinctio voluptatem cum voluptates, fuga tempora!LoremLorem
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore cupiditate iure illo aperiam sint pariatur sunt distinctio? Dolore expedita libero quasi consequatur, excepturi aspernatur, aperiam, ipsa enim ab placeat quos.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam assumenda quisquam dolore omnis exercitationem praesentium eius quidem iste, ratione facere, voluptatum dolor optio unde suscipit ipsum obcaecati, culpa similique molestiae?
+        </p>
+    </div>
+</body>
+</html>

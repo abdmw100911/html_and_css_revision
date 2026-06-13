@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property in css</title>
+    <style>
+        #box1{
+            display: inline;
+            border: 2px solid;
+            background-color: rgb(184, 36, 36);
+        }
+        #box2{
+            display: block;
+            border: 2px solid;
+            background-color: rgb(99, 99, 235);
+        }
+    </style>
+</head>
+<body>
+    <!--
+    block level : starts on a new line and occupies all the available space, we can adjust its height and width
+    
+    inline : starts on the same line and takes only the required space , we cant adjust the width and height here
+
+    inline-block : behaves like a inline element but we can adjust the height and width
+    -->
+
+    <div id="box1">
+        BOX 1 BLOCK
+    </div>
+    <span id = "box2">
+        BOX 2 INLINE
+    </span>
+</body>
+</html>

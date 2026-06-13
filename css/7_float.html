@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating elements</title>
+    <style>
+        body{
+            display: flow-root;
+            border: 2px solid;
+        }
+        #box1{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            margin-right: 10px;
+            float: left;
+
+        }
+        #box2{
+            height: 50px;
+            width: 50px;
+            background-color: rgb(15, 68, 165);
+            margin-right: 10px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    block element take all the space 
+    text then starts below it 
+    but we can make text start beside the block element using "float"
+
+    float:left -> block elements floats on left side and other elements cover the right side space 
+
+    opposite for float:right
+
+    when we use float, the elements may overflow <body> element 
+    to make sure this doesnt happen do the following 
+
+    <body style = "display : flow-root">
+    -->
+
+    <div id="box1">Box 1</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, et animi. Doloribus sequi odio laborum magni repellendus necessitatibus sapiente consequuntur, eius aspernatur sed nesciunt eligendi corrupti ipsa tenetur minus ducimus?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis incidunt facere consequuntur! Placeat distinctio amet fuga eum! Minima fugit ea, eveniet ipsum culpa praesentium cupiditate tenetur, perferendis quibusdam eligendi impedit?</p>
+
+    <div id="box2">Box 2</div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda repellendus incidunt fugit earum nihil veniam aut voluptatem, praesentium sint explicabo, quod, deleniti molestiae omnis blanditiis amet laborum! Atque, cumque laborum!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sapiente at, libero iure nisi eius tempora esse provident qui voluptas a delectus quam molestiae rerum est ea alias vitae porro.</p>
+</body>
+</html>
