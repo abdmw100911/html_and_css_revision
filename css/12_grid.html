@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in html</title>
+    <style>
+        body{
+            padding-bottom: 1000px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 100px 100px;
+            margin-bottom: 15px;
+        }
+        .box1{
+            background-color: rgb(240, 54, 54);
+            height: 100px;
+        }
+        .box2{
+            background-color: rgb(96, 96, 233);
+            height: 100px;
+        }
+
+        .container1{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            margin-bottom: 15px;
+        }
+        .box3{
+            background-color: rgb(240, 54, 54);
+        }
+        .box4{
+            background-color: rgb(96, 96, 233);
+        }
+
+        .container2{
+            display: grid;
+            grid-template-columns: 100px 1fr 2fr;
+            margin-bottom: 15px;
+        }
+
+        .container4{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--grid is a layout with rows and columns-->
+    <!--
+    display : grid 
+    grid-template-columns : 100px 100px 
+    (number of values is the number of columns and the value itself is
+    the width of the column)
+
+    when we put more elements than the number of columns in the grid 
+    they automically wrap in the next row
+    -->
+    <div class="container">
+        <div class="box1">
+            box1
+        </div>
+        <div class="box2">
+            box2
+        </div>
+    </div>
+
+    <!--
+    when we put more elements than the number of columns in the grid 
+    they automically wrap in the next row
+    -->
+    <div class="container1">
+        <div class="box1">
+            box1
+        </div>
+        <div class="box2">
+            box2
+        </div>
+        <div class="box3">
+            box3
+        </div>
+        <div class="box4">
+            box4
+        </div>
+    </div>
+
+    <!--
+    1fr - takes the remaining space 
+    1fr 1fr - 2 elements take the remaining space equally 
+    1fr 2fr - 2 elements take remainig space in ration 1:2
+    -->
+    <div class="container2">
+        <div class="box1">
+            box1
+        </div>
+        <div class="box2">
+            box2
+        </div>
+        <div class="box3">
+            box3
+        </div>
+    </div>
+
+    <!--
+    creatign a grid with space in between
+    -->
+
+    <div class="container4" >
+        <div class="box1">
+            box1
+        </div>
+        <div class="box2">
+            box2
+        </div>
+        <div class="box1">
+            box1
+        </div>
+        <div class="box2">
+            box2
+        </div>
+        <div class="box1">
+            box1
+        </div>
+        <div class="box2">
+            box2
+        </div>
+    </div>
+
+</body>
+</html>

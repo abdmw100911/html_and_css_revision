@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout using Grid</title>
+    <style>
+        body{
+        font-family: Arial;
+        font-weight: bold;    
+        }
+
+        #container{
+            display:grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 15px;
+        }
+        #box1{
+            width: 200px;
+            box-shadow: 1px 1px 10px rgb(160, 159, 159);
+            display: inline-block;
+            margin-right: 15px;
+            border-radius:10px;
+        }
+        #profile-name{
+            /* Top, Right, Bottom, Left = 20px */
+            margin: 5px 0 5px 5px;
+            
+        }
+        #profile-pic{
+            height: 200px;
+            width: 200px;
+            margin-bottom: 0px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #mutuals-row {
+            padding-left: 5px;
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            align-items: center;
+        }
+
+        #mutual-pic {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+
+        #mutuals {
+            vertical-align: middle;
+            margin: 0 0 0 8px; /* Removes default paragraph spacing and adds a left gap */
+            font-weight: 400;
+            color: rgb(100, 100, 100);
+        }
+
+        #add-button{
+            background-color: rgb(24, 119, 242);
+            color: white;
+            border: none;
+            border-radius: 2px;
+            padding: 10px 20px 10px 20px;
+            margin-left: 5px;
+            margin-bottom: 10px;
+        }
+        #add-button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1">
+
+            <div id="profile">
+                <img src="/images/bg.png" alt="profile_picture" id="profile-pic">
+                <p id="profile-name">Eren Yeager</p>
+            </div>
+
+            <div id="mutuals-row">
+                <img src="/images/album_cover.jpg" alt="" id="mutual-pic">
+                <p id="mutuals">2 Mutual friends</p> 
+            </div>
+
+            <button id="add-button">
+                Add Friend
+            </button>
+
+        </div>
+
+
+        <div id="box1">
+
+            <div id="profile">
+                <img src="/images/bg.png" alt="profile_picture" id="profile-pic">
+                <p id="profile-name">Eren Yeager</p>
+            </div>
+
+            <div id="mutuals-row">
+                <img src="/images/album_cover.jpg" alt="" id="mutual-pic">
+                <p id="mutuals">2 Mutual friends</p> 
+            </div>
+
+            <button id="add-button">
+                Add Friend
+            </button>
+
+        </div>
+        <div id="box1">
+
+            <div id="profile">
+                <img src="/images/bg.png" alt="profile_picture" id="profile-pic">
+                <p id="profile-name">Eren Yeager</p>
+            </div>
+
+            <div id="mutuals-row">
+                <img src="/images/album_cover.jpg" alt="" id="mutual-pic">
+                <p id="mutuals">2 Mutual friends</p> 
+            </div>
+
+            <button id="add-button">
+                Add Friend
+            </button>
+
+        </div>
+    </div>
+</body>
+</html>
