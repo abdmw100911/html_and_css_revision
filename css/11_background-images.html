@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background images</title>
+    <style>
+        @font-face {
+            font-family:bitCount ;
+            src: url(BitcountGridDouble-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf);
+        }
+        #header{
+            margin-top: 0px;
+            display: flex;
+            align-items: center; /*centers vertically*/
+            justify-content: center; /*centers horizontally*/
+            
+        }
+        h1{
+            margin-top: 10px;
+            font-family: bitCount;
+            font-size: 85px;
+            color: rgb(153, 9, 9);
+        }
+        body{
+            margin: 0px;
+            background-image: url(/images/bg.png);
+            background-position: center;/*position of the background image*/
+            background-attachment: fixed; /*image is fixed to the window*/
+            background-repeat: no-repeat;/*if size is small , image will not repeat*/
+            background-size: cover;/*image covers the whole window */
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>FREEDOM</h1>
+    </div>
+    
+</body>
+</html>
