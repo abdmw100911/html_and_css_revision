@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in Css</title>
+    <style>
+        #box1{
+            background-color: rgb(218, 56, 56);
+            width: 100px;
+            height: 100px;
+            color: rgb(147, 186, 220);
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        #box2{
+            background-color: burlywood;
+            width: 100px;
+            height: 100px;
+            /*position fixed at top-left corner*/
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        #box3{
+            background-color: rgb(255, 96, 183);
+            text-align: center;
+            color: aliceblue;
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: 300px;
+        }
+        #box4{
+            background-color: aliceblue;
+            text-align: center;
+            color: rgb(255, 96, 183);
+            height: 100px;
+            width: 100px;
+            position : absolute;
+            left: 50px;
+            top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    1. position : relative 
+    means relative to where the element normally is 
+    based on relative position of elemnent, we can adjust its position through
+    top : 100 px -> adds 100 px to top of elements relative position (pushing it down)
+    left : 100px -> adds 100 px to left of elements relative position (pushing right)
+    -->
+    <div id="box1">RELATIVE</div>
+
+    <!--
+    2. position : fixed;
+    element is in fixed position relative to the web brwoser 
+    meaning even if we scroll down , the element will still stay at the same position
+    -->
+    <div id="box2">FIXED</div>
+
+    <!--
+    position : absolute
+    positions element relative to the nearest parent
+    -->
+    <!--
+    here the position of the box4 is absolute, and its parent box is box3
+    meaning if i move box3 anywhere in the page 
+    the position of the box4 inside it will remain absoulte 
+    and box4 will also move with box3
+    -->
+    <div id="box3">
+        PARENT BOX
+        <div id="box4">
+            ABSOULTE
+        </div>
+    </div>
+
+    <!--
+    position : sticky 
+    similar to fixed , but leaves somespace when scrolling , not that imp
+    -->
+
+    <!--
+    position : static 
+    follows natural postion 
+    doesnt obey left, top right , bottom rules.
+    stays where it naturally should be
+    -->
+</body>
+</html>
