@@ -1,0 +1,113 @@
+@font-face {
+        font-family: nunito;
+        src: url(Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: nunito-italic;
+    src: url(Nunito-Italic-VariableFont_wght.ttf);
+}
+
+:root{
+    --box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+    --hover-shadow : 0px 4px 4px 0px rgba(3,3,3,0.561);
+}
+body{
+    background-color: #fff0e5;
+    font-family: nunito;
+}
+.container{
+    width: 350px;
+    
+    margin: 130px auto;
+}
+.header h1{
+    font-size: 20px;
+}
+.header h5{
+    font-size: 12px;
+    color: rgb(72, 66, 66);
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+form input[type="text"],input[type="password"]{
+    border: 1px solid;
+    margin-bottom: 20px;
+    height: 40px;
+    transition: border 0.2s;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+form input[type="text"]:hover,input[type="password"]:hover{
+    border:#3a10e5 solid 1px;
+}
+form input[type="text"]:focus,input[type="password"]:focus{
+    border-width: 3px;
+    outline: none;
+    padding: 4px;
+}
+form label{
+    font-size: 12px;
+    color: rgb(72, 66, 66);
+}
+
+.login-button{
+    margin: 25px 0;
+    width: 75px;
+    background-color: #3a10e5;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.login-button:hover{
+    opacity: 0.90;
+}
+.forgot-pass{
+    color: #3a10e5;
+    font-weight: 700;
+}
+.forgot-pass:hover{
+    text-decoration: none;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.images button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid ;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+.images button:hover{
+    box-shadow: var(--hover-shadow);
+}
+.images img{
+    height: 25px;
+    object-fit: contain;
+}
+.footer p{
+    font-weight: 700;
+}
+.footer a{
+    color: #3a10e5;
+}
+.footer a:hover{
+    text-decoration: none;
+}

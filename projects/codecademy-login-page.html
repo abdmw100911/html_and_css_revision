@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codecademy login page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <header class="main-header">
+        <img src="/images/logo.png" alt="" class="logo">
+        <nav>
+            <a href="#">Catalog</a>
+            <a href="#">Live courses</a>
+            <a href="#">Resources</a>
+            <a href="#">Pricing</a>
+            <a href="#">Teams</a>
+        </nav>
+        <div class="right-section">
+            <button class="search-button">
+                <img src="/images/search.svg" alt="" class="search-image">
+            </button>
+            <button class="signup-button">
+                Sign up
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <h1>Log in to Codecademy</h1>
+            <h5>* Required</h5>
+        </div>
+
+        <!-- Moved the button and link inside the form for better semantic layout -->
+        <form action="">
+            <label for="email">Email or username*</label>
+            <input type="text" id="email">
+
+            <label for="pass">Password*</label>
+            <input type="password" id="pass">
+
+            <a href="#" class="forgot-pass">I forgot my password</a>
+
+            <button type="submit" class="login-button">Log in</button>
+        </form>
+
+        <div class="footer">
+            <h5>Or login using</h5>
+            <div class="images">
+                <button><img src="/images/google.jpg" alt="Google"></button>
+                <button><img src="/images/facebook.png" alt="Facebook"></button>
+                <button><img src="/images/github.png" alt="GitHub"></button>
+                <button><img src="/images/twitter.jpg" alt="Twitter"></button>
+                <button><img src="/images/apple.jpg" alt="Apple"></button>
+            </div>
+            <p>Not a member yet? <a href="#">Sign up for free</a></p>
+        </div>
+    </div>
+</body>
+</html>
