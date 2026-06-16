@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in css</title>
+</head>
+<body>
+    <!--flexbox is similar to grid , but it is more flexible in nature-->
+
+    <!--
+    similar to grid , the outer div must have "display : flex" , and the inner elements(divs) are 
+    placed inside the flexbox
+
+    display : flex; (defines that it is a flexbox)
+    flex-direction : row (elements will be placed horizontally inside the flexbox)
+
+    1. unlike grid , where we first have to define the size of the grid and then place 
+       elements inside the grid, in flexbox the elements automatically take only the space 
+       required by them. the elements inside the flexbox thus behave like inline-block elements
+    -->
+    <div style="display: flex; flex-direction: row;">
+        <div style="background-color: lightblue;">
+            div 1 taking only required space
+        </div>
+        <div style="background-color: lightpink;">
+            div 2 <p>abd (when adding new element, the inner divs automically align themselves)</p>
+        </div>
+    </div>
+
+    <!-- SIMILARITIES IN FLEXBOX AND GRID 
+    in grid we can define the width of the column, we can do that in flexbox as well
+    in grid we can use "1fr" for element to take the remaining space, in flexbox this can be done
+    through "flex : 1" 
+    -->
+    <div style="margin-top:30px; display: flex; flex-direction: row;">
+        <div style="background-color: lightblue; width: 70px;">
+            70px
+        </div>
+        <div style="background-color: lightpink; flex: 1;">
+            flex : 1
+        </div>
+    </div>
+
+    <div style="margin-top:30px; display: flex; flex-direction: row;">
+        <div style="background-color: lightblue; width: 70px;">
+            70px
+        </div>
+        <div style="background-color: lightpink; flex: 1;">
+            flex : 1
+        </div>
+        <div style="background-color: lightblue; flex : 2;">
+           flex : 2
+        </div>
+    </div>
+
+    <!--DIFFERENCES IN GRID AND FLEXBOX
+    1. in grid we first define the columns
+       grid-template-columns : 10px 1fr 10px -> here we first define the number of columns and
+       their size , and then put elements into it , thus making grid more rigid
+
+       but in flexbox we dont have to define the number columns and their size beforehand
+       we can add new columns and define their size at the time of including new elements 
+       thus making flexbox more flexible
+
+       advantage of this in flexbox is that if we move the elements inside the flexbox , 
+       they take their width with them , allowing a flexible layout
+
+       grid = rigid layout 
+       flexbox = flexible layout
+    -->
+    <div style="margin-top:30px; display: flex; flex-direction: row;">
+        <div style="background-color: lightblue; flex : 2;">
+           flex : 2
+        </div>
+        <div style="background-color: lightpink; flex: 1;">
+            flex : 1
+        </div>
+        <div style="background-color: lightblue; width: 70px;">
+            70px
+        </div>
+    </div>
+
+    <!--
+    ALIGNING ELEMENTS HORIZONTALLY IN FLEXBOX
+
+    justify-content : start (aligns all elements to left)
+    justify-content : center
+    justify-content : end
+    justtify-content : space-between (aligns items horizontally such that there is equal space
+                                      between them)
+
+    -->
+    <div style="
+    margin-top:30px; 
+    display: flex; 
+    flex-direction: row;
+    border: 2px solid gray;
+    height: 70px;
+    justify-content: space-between;
+    ">
+        <div style="background-color: lightblue; width : 100px">
+           100px
+        </div>
+        <div style="background-color: lightpink; width : 100px">
+            100px
+        </div>
+        <div style="background-color: lightblue; width: 100px;">
+            100px
+        </div>
+    </div>
+
+
+    <!--
+    ALIGNING ITEMS VERTICALLY IN A FLEXBOX
+    align-items : stretch (default) ->inner elements stretch to fill the height of the outer div
+    align-items: baseline; -> places items to top 
+    align-items: end; -> bottom
+    align-items : center 
+    -->
+    <div style="
+    margin-top:30px; 
+    display: flex; 
+    flex-direction: row;
+    border: 2px solid gray;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    ">
+        <div style="background-color: lightblue; width : 100px">
+           100px
+        </div>
+        <div style="background-color: lightpink; width : 100px">
+            100px
+        </div>
+        <div style="background-color: lightblue; width: 100px;">
+            100px
+        </div>
+
+    </div>
+
+</body>
+</html>

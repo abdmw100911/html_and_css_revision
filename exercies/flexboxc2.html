@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox challenge 2</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+        .container{
+            border: 2px solid gray;
+            height: 50px;
+            background-color: rgb(120, 82, 178);
+            display: flex;
+            flex-direction : row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .home{
+            margin-left: 15px;
+            font-weight: bold;
+            color: white;
+        }
+        .search{
+            width: 500px;
+            border: none;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            height: 30px;
+            border-radius: 15px;
+            padding-left: 20px;
+        }
+        .download{
+            margin-right: 10px;
+            color: white;
+            background-color: rgb(120, 82, 178);;
+            border: white 1px solid;
+            padding: 5px 15px 5px 15px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="home">
+            Home
+        </div>
+        
+        <input class="search" type="search" placeholder="Search">
+        
+        <button class="download">Download</button>
+    
+    </div>
+</body>
+</html>

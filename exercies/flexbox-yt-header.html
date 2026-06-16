@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Header</title>
+    <style>
+        .header{
+            display:flex;
+            flex-direction: row;
+            height: 70px;
+            border: 2px solid gray;
+            justify-content: space-between;
+        }
+        .left-section{
+            background-color: lightblue;
+            width: 175px;
+        }
+        .middle-section{
+            background-color: lightpink;
+            flex : 1;
+            margin-left: 150px;
+            margin-right: 100px;
+            max-width: 500px;
+        }
+        .right-section{
+            background-color: lightblue;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            left section
+        </div>
+        <div class="middle-section">
+            middle section
+        </div>
+        <div class="right-section">
+            right section
+        </div>
+    </div>
+</body>
+</html>
