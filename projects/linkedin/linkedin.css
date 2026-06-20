@@ -1,0 +1,58 @@
+.container{
+    width: 350px;
+    margin: 130px auto;
+    font-family: Arial;
+}
+
+.logo{
+    height: 150px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+form input[type="text"],input[type="password"],input[type="email"]{
+    height: 25px;
+    padding: 5px 0px 5px 10px;
+}
+form label{
+    color: rgb(20, 20, 20);
+    font-size: 14px;
+}
+
+form input[type="submit"]{
+    margin-top:15px;
+    margin-bottom:10px;
+    background-color: rgb(40, 40, 239);
+    color: white;
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+}
+.or{
+    margin-left: 170px;
+    font-weight: bold;
+}
+.continue{
+    width: 100%;
+    background-color: rgb(35, 35, 104);
+    color: white;
+    font-weight: 400;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.already{
+    margin-left: 85px;
+    margin-top:20px;
+}
+.container a{
+    text-decoration:none;
+    color: rgb(40, 40, 239);
+    font-weight: bold;
+}
+
